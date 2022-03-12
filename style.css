@@ -23,6 +23,7 @@ body{
     height: 210px;
     width: 210px;
     transform: scale(2);
+    transition: transform 1s;
     
     /* background-color: rgb(78, 64, 64); */
 }
@@ -241,5 +242,12 @@ body{
     }
     100%{
         transform: rotate(360deg);
+    }
+}
+
+@media (max-width:500px){
+    .watch-wrapper{
+        transform: scale(1);
+        transition: transform 1s;
     }
 }
