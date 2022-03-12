@@ -1,0 +1,245 @@
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+    font-family: 'League Gothic', sans-serif;
+    color:#5ff0ce;
+}
+
+body{
+    background-color: wheat;
+    background-image: linear-gradient(rgb(66, 68, 70),rgb(50, 53, 56));
+}
+
+.main-flex-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.watch-wrapper{
+    height: 210px;
+    width: 210px;
+    transform: scale(2);
+    
+    /* background-color: rgb(78, 64, 64); */
+}
+
+.silver-guard{
+    position: relative;
+    height: 210px;
+    width: 210px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    box-shadow: 0px 0px 10px 0px;
+    /* background-image: radial-gradient(rgb(206, 206, 206),rgb(236, 233, 233)); */
+    animation-name: silver-guard-animation;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+@keyframes silver-guard-animation {
+    0%{
+        transform: scale(0);
+    }
+    70%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.time-circle{
+    position: relative;
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    background-image: linear-gradient(rgb(66, 68, 70),rgb(50, 53, 56));
+    overflow: hidden;
+}
+
+.name{
+    font-size: 15px;
+    font-style: italic;
+    position: absolute;
+    top:20%;
+    left:50%;
+    transform: translate(-50%,-50%);
+
+    animation-name: name-animation;
+    animation-duration: 1s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes name-animation {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.number{
+    font-size: 20px;
+    animation-name: number-animation;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes number-animation {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.number-zero{
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.number-three{
+    position: absolute;
+    left:100%;
+    top:50%;
+    transform: translateX(-150%);
+}
+
+
+.number-six{
+    position: absolute;
+    left:50%;
+    top:100%;
+    transform: translateY(-100%);
+}
+
+.number-nine{
+    position: absolute;
+    left:0%;
+    top:50%;
+    transform: translateX(50%);
+}
+
+.triangle-symbol{
+    height: 20px;
+    width: 20px;
+    background-color: #5ff0ce;
+
+}
+
+.triangle-symbol::after{
+    content: "";
+    position: relative;
+    display: block;
+    height: 29px;
+    width: 29px;
+    background-color: rgb(50, 53, 56);
+    transform: rotate(40deg);
+    left: 27%;
+    top: 20%;
+  
+}
+
+.triangle-after-zero{
+    position: absolute;
+    top: 5%;
+    right: 15%;
+    transform: rotate(-90deg) scale(0.5);
+}
+
+.triangle-after-three{
+    position: absolute;
+    bottom: 5%;
+    right: 15%;
+    transform: rotate(15deg) scale(0.5);
+}
+
+.triangle-after-six{
+    position: absolute;
+    bottom: 5%;
+    left: 15%;
+    transform: rotate(85deg) scale(0.5);
+}
+
+.triangle-after-nine{
+    position: absolute;
+    top: 5%;
+    left: 15%;
+    transform: rotate(195deg) scale(0.5);
+}
+
+.needle{
+    background-color: #5ff0ce;
+    border-radius: 10px;
+    transform-origin: 50% 10%;
+    box-shadow: 0px 0px 10px 0.1px #5ff0ce;
+}
+
+.needle-dot{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    background-color: #5ff0ce;
+}
+
+.hour-needle{
+    height: 50px;
+    width: 10px;
+    background-color: #5ff0ce;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: rotate(50deg);
+}
+
+.minute-needle{
+    height: 70px;
+    width: 5px;
+    background-color: #5ff0ce;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: rotate(110deg);
+}
+
+.second-needle{
+    height: 90px;
+    width: 1px;
+    background-color: #5ff0ce;
+    position: absolute;
+    top:50%;
+    left:52%;
+    transform: rotate(100deg);
+    animation-name: second-needle-animation;
+    animation-timing-function: linear;
+    animation-duration: 10s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+@keyframes second-needle-animation {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
