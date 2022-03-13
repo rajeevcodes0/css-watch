@@ -2,7 +2,7 @@
 A watch built using HTML, CSS and JS
 
 # Demo
-[here](rajeevcodes0.github.io/css-watch/)
+[here](https://rajeevcodes0.github.io/css-watch/)
 
 # Goal
 Create a minimal neon-light themed watch
