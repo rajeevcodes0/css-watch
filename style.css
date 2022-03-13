@@ -85,7 +85,7 @@ body{
         opacity: 0;
     }
     100%{
-        opacity: 1;
+        opacity: 0.4;
     }
 }
 
@@ -228,13 +228,13 @@ body{
     position: absolute;
     top:50%;
     left:52%;
-    transform: rotate(100deg);
-    animation-name: second-needle-animation;
+    /* transform: rotate(100deg); */
+    /* animation-name: second-needle-animation;
     animation-timing-function: linear;
     animation-duration: 10s;
     animation-delay: 0s;
     animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite; */
 }
 @keyframes second-needle-animation {
     0%{
@@ -242,6 +242,70 @@ body{
     }
     100%{
         transform: rotate(360deg);
+    }
+}
+
+.first-plus{
+    position: relative;
+    animation-name: first-plus-animation;
+    animation-delay: 5s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+@keyframes first-plus-animation {
+    0%{
+        font-size: 1rem;
+        bottom:0px;
+        left:0px;
+    }
+    33%{
+        font-size: 1.5rem;
+        bottom:0px;
+        left:0px;
+    }
+    66%{
+        font-size: 1.5rem;
+        bottom:5px;
+        left:0px;
+    }
+    100%{
+        font-size: 1.5rem;
+        bottom:5px;
+        left:5px;
+    }
+}
+
+.second-plus{
+    position: relative;
+    animation-name: second-plus-animation;
+    animation-delay: 5s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+@keyframes second-plus-animation {
+    0%{
+        font-size: 1rem;
+        top:0px;
+        right:0px;
+    }
+    33%{
+        font-size: 1.5rem;
+        top:0px;
+        right:0px;
+    }
+    66%{
+        font-size: 1.5rem;
+        top:5px;
+        right:0px;
+    }
+    100%{
+        font-size: 1.5rem;
+        top:5px;
+        right:5px;
     }
 }
 
