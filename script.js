@@ -4,6 +4,8 @@ function init() {
   let minuteNeedle = document.querySelector(".minute-needle");
   let hourNeedle = document.querySelector(".hour-needle");
 
+
+
   //get the current time
   let currentTime = new Date(Date.now());
 
@@ -18,6 +20,7 @@ function init() {
       hourNeedle.style.transform = `rotate(${( ( currentTime.getHours() + 6 ) % 12 ) *30}deg)`;
       
       clockStarted = true;
+      
     }else {
         
     //regex to get numbers form the string like rotate(30deg)

@@ -8,7 +8,50 @@
 
 body{
     background-color: wheat;
-    background-image: linear-gradient(rgb(66, 68, 70),rgb(50, 53, 56));
+    /* background-image: linear-gradient(rgb(66, 68, 70),rgb(50, 53, 56)); */
+    background-image: url("./brick-background.jpg");
+}
+
+.neon-heading{
+    font-family: 'Neonderthaw', cursive;
+
+    position: absolute;
+    top:0;
+    font-size: 3rem;
+    text-shadow: 0 0 15px #5ff0ce, 0 0 15px #66d4bb;
+    transition: top 2s;
+
+    animation-name: neon-heading-animation;
+    animation-delay: 5s;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes neon-heading-animation {
+    0%{
+        opacity: 1;
+    }
+    20%{
+        opacity: 0;
+    }
+    21%{
+        opacity: 1;
+    }
+    35%{
+        opacity: 0;
+    }
+    36%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 0;
+    }
+    71%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 .main-flex-container{
@@ -61,7 +104,7 @@ body{
     height: 200px;
     width: 200px;
     border-radius: 100%;
-    background-image: linear-gradient(rgb(66, 68, 70),rgb(50, 53, 56));
+    /* background-image: linear-gradient(rgb(66, 68, 70),rgb(50, 53, 56)); */
     overflow: hidden;
 }
 
@@ -188,6 +231,22 @@ body{
     border-radius: 10px;
     transform-origin: 50% 10%;
     box-shadow: 0px 0px 10px 0.1px #5ff0ce;
+    opacity: 0;
+
+    animation-name: show-needle-animation;
+    animation-delay: 3s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+@keyframes show-needle-animation {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 .needle-dot{
@@ -310,6 +369,10 @@ body{
 }
 
 @media (max-width:500px){
+    .neon-heading{
+        top:20%;
+        transition: top 2s;
+    }
     .watch-wrapper{
         transform: scale(1);
         transition: transform 1s;
