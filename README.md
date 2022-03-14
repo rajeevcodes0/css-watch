@@ -1,5 +1,6 @@
 # css-watch
 A watch built using HTML, CSS and JS
+![Screenshot](https://github.com/rajeevcodes0/css-watch/blob/main/screenshot.png)
 
 # Demo
 [here](https://rajeevcodes0.github.io/css-watch/)
