@@ -81,6 +81,175 @@ body{
     }
 }
 
+.guitar-svg{
+    height: 100px;
+    width: 100px;
+    transition: all 0.3s;
+}
+
+#tiny-line{
+    fill: #5ff0ce;
+}
+
+#main-body{
+    fill: #5ff0ce;
+    filter: drop-shadow(0 0 5px #5ff0ce);
+}
+
+#neon-guitar-one{
+    position: absolute;
+    top:20%;
+    left:20%;
+    opacity: 0;
+
+    animation-name: neon-guitar-one-animation;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-duration: 5s;
+    
+}
+
+@keyframes neon-guitar-one-animation {
+    0%{
+        opacity: 1;
+    }
+    10%{
+        opacity: 0;
+    }
+    11%{
+        opacity: 1;
+    }
+    22%{
+        opacity: 0;
+    }
+    23%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 0;
+    }
+    71%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+#neon-guitar-two{
+    position: absolute;
+    bottom:20%;
+    right:20%;
+
+    animation-name: neon-guitar-two-animation;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-duration: 5s;
+}
+
+@keyframes neon-guitar-two-animation {
+    0%{
+        opacity: 1;
+    }
+    33%{
+        opacity: 0;
+    }
+    34%{
+        opacity: 1;
+    }
+    66%{
+        opacity: 0;
+    }
+    67%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 0;
+    }
+    81%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+.guitar-music-icon{
+    height: 20px;
+    width: 20px;
+}
+
+#music-icon-path{
+    fill:#5ff0ce;
+}
+
+#neon-guitar-one-music-icon{
+    position: absolute;
+    top:20%;
+    left:20%;
+
+    animation-name: neon-guitar-one-music-icon-animation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes neon-guitar-one-music-icon-animation {
+    0%{
+        top:20%;
+        left:20%;
+    }
+    20%{
+        top:20.1%;
+        left:20.1%;
+    }
+    60%{
+        top:19.9%;
+        left:19.9%;
+    }
+    100%{
+        top:20%;
+        left:20%;
+    }
+}
+
+#neon-guitar-two-music-icon{
+    position: absolute;
+    bottom:20%;
+    right:20%;
+
+    animation-name: neon-guitar-two-music-icon-animation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes neon-guitar-two-music-icon-animation {
+    0%{
+        bottom:20%;
+        right:20%;
+    }
+    20%{
+        bottom:20.1%;
+        right:20.1%;
+    }
+    60%{
+        bottom:19.9%;
+        right:19.9%;
+    }
+    100%{
+        bottom:20%;
+        right:20%;
+    }
+}
+
+
 .main-flex-container{
     display: flex;
     align-items: center;
@@ -437,11 +606,32 @@ body{
 
 @media (max-width:500px){
     .neon-heading{
-        top:20%;
+        top:10%;
         transition: top 2s;
     }
     .watch-wrapper{
         transform: scale(1);
         transition: transform 1s;
+    }
+    .guitar-svg{
+        height: 60px;
+        width: 60px;
+        transition: all 0.3s;
+    }
+}
+
+@media (min-width:501px) and (max-width:800px){
+    .neon-heading{
+        top:10%;
+        transition: top 2s;
+    }
+    .watch-wrapper{
+        transform: scale(1.5);
+        transition: transform 1s;
+    }
+    .guitar-svg{
+        height: 70px;
+        width: 70px;
+        transition: all 0.3s;
     }
 }
