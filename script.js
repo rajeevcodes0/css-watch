@@ -53,6 +53,14 @@ function addListenersToGuitars(){
   musicIconTwo.style.opacity="0";
 
   guitarOne.addEventListener("click",()=>{
+    //if the track is not paused then its playing
+    if(!trackOne.paused){
+      //then user wants to pause the song, so pause it and return
+      trackOne.pause();
+      //hide the music icon as well
+      musicIconOne.style.opacity="0";
+      return;
+    }
     musicIconOne.style.opacity="1";
     musicIconTwo.style.opacity="0";
     trackTwo.pause();
@@ -60,6 +68,15 @@ function addListenersToGuitars(){
   })
 
   guitarTwo.addEventListener("click",()=>{
+
+    //if the track is not paused then its playing
+    if(!trackTwo.paused){
+      //then user wants to pause the song, so pause it and return
+      trackTwo.pause();
+      musicIconTwo.style.opacity="0";
+      return;
+    }
+
     musicIconOne.style.opacity="0";
     musicIconTwo.style.opacity="1";
     trackOne.pause();
