@@ -1,0 +1,40 @@
+#neon-saxophone-one{
+    position: absolute;
+    top:50%;
+    left:10%;
+    opacity: 0;
+
+    animation-name: neon-saxophone-one-animation;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-duration: 5s;
+    
+}
+
+@keyframes neon-saxophone-one-animation {
+    0%{
+        opacity: 1;
+    }
+    10%{
+        opacity: 0;
+    }
+    11%{
+        opacity: 1;
+    }
+    22%{
+        opacity: 0;
+    }
+    23%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 0;
+    }
+    71%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}

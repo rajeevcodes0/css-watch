@@ -1,0 +1,12 @@
+.saxophone-svg-container{
+    height: 80px;
+    width: 80px;
+    transition: all 0.3s;
+    transform: rotate(-20deg);
+}
+
+#saxophone-main-path{
+    fill: #5ff0ce;
+    filter: drop-shadow(0 0 1px #5ff0ce);
+}
+

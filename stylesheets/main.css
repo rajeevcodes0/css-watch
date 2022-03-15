@@ -10,10 +10,14 @@
 @import "./modules/guitar/guitar-one.css";
 @import "./modules/guitar/guitar-two.css";
 
+@import "./modules/saxophone/saxophone-base-style.css";
+@import "./modules/saxophone/neon-saxophone-one.css";
+
 /* files related to the music icons that are shown when the song is playing */
 @import "./modules/music-icon/music-icon-base-styles.css";
 @import "./modules/music-icon/music-icon-one.css";
 @import "./modules/music-icon/music-icon-two.css";
+@import "./modules/music-icon/saxophone-one-music-icon.css";
 
 /* this should be under some folder of layout or sth */
 @import "./modules/main-flex-container.css";

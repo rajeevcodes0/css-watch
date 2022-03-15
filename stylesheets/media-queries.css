@@ -12,6 +12,11 @@
         width: 60px;
         transition: all 0.3s;
     }
+    .saxophone-svg-container{
+        height: 40px;
+        width: 40px;
+        transition: all 0.3s;
+    }
 }
 
 @media (min-width:501px) and (max-width:800px){
@@ -26,6 +31,11 @@
     .guitar-svg-container{
         height: 70px;
         width: 70px;
+        transition: all 0.3s;
+    }
+    .saxophone-svg-container{
+        height: 60px;
+        width: 60px;
         transition: all 0.3s;
     }
 }
