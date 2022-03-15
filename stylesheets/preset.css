@@ -1,0 +1,12 @@
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+    
+}
+
+body{
+    
+    font-family: 'League Gothic', sans-serif;
+    color:#5ff0ce;
+}

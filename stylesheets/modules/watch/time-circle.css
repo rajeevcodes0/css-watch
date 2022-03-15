@@ -1,0 +1,26 @@
+.time-circle{
+    position: relative;
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    box-shadow: 0px 0px 10px 0px;
+    
+    overflow: hidden;
+
+    animation-name: time-circle-animation;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+@keyframes time-circle-animation {
+    0%{
+        transform: scale(0);
+    }
+    70%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}

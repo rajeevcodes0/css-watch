@@ -1,0 +1,41 @@
+.neon-heading{
+    font-family: 'Neonderthaw', cursive;
+
+    position: absolute;
+    top:0;
+    font-size: 3rem;
+    text-shadow: 0 0 15px #5ff0ce, 0 0 15px #66d4bb;
+    transition: top 2s;
+
+    animation-name: neon-heading-animation;
+    animation-delay: 5s;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes neon-heading-animation {
+    0%{
+        opacity: 1;
+    }
+    20%{
+        opacity: 0;
+    }
+    21%{
+        opacity: 1;
+    }
+    35%{
+        opacity: 0;
+    }
+    36%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 0;
+    }
+    71%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}

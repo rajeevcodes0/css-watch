@@ -1,0 +1,31 @@
+.second-plus{
+    position: relative;
+    animation-name: second-plus-animation;
+    animation-delay: 5s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+@keyframes second-plus-animation {
+    0%{
+        font-size: 1rem;
+        top:0px;
+        right:0px;
+    }
+    33%{
+        font-size: 1.5rem;
+        top:0px;
+        right:0px;
+    }
+    66%{
+        font-size: 1.5rem;
+        top:5px;
+        right:0px;
+    }
+    100%{
+        font-size: 1.5rem;
+        top:5px;
+        right:5px;
+    }
+}

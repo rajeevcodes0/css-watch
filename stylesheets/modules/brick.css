@@ -1,0 +1,8 @@
+.brick{
+    height: 40px;
+    width: 100px;
+    display: inline-block;
+    background-color: #111111;
+    margin:2px;
+    border-radius: 5px;
+}

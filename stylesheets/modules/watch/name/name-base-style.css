@@ -1,0 +1,23 @@
+.name{
+    font-size: 15px;
+    font-style: italic;
+    position: absolute;
+    top:20%;
+    left:50%;
+    transform: translate(-50%,-50%);
+
+    animation-name: name-animation;
+    animation-duration: 1s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes name-animation {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0.4;
+    }
+}

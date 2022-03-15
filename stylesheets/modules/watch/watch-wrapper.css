@@ -1,0 +1,6 @@
+.watch-wrapper{
+    height: 210px;
+    width: 210px;
+    transform: scale(2);
+    transition: transform 1s;  
+}

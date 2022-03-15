@@ -1,0 +1,31 @@
+@media (max-width:500px){
+    .neon-heading{
+        top:10%;
+        transition: top 2s;
+    }
+    .watch-wrapper{
+        transform: scale(1);
+        transition: transform 1s;
+    }
+    .guitar-svg-container{
+        height: 60px;
+        width: 60px;
+        transition: all 0.3s;
+    }
+}
+
+@media (min-width:501px) and (max-width:800px){
+    .neon-heading{
+        top:10%;
+        transition: top 2s;
+    }
+    .watch-wrapper{
+        transform: scale(1.5);
+        transition: transform 1s;
+    }
+    .guitar-svg-container{
+        height: 70px;
+        width: 70px;
+        transition: all 0.3s;
+    }
+}

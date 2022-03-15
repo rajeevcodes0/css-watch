@@ -1,0 +1,10 @@
+.minute-needle{
+    height: 70px;
+    width: 5px;
+    background-color: #5ff0ce5b;
+    border:1px solid #5ff0ce;
+    position: absolute;
+    top:46%;
+    left:49%;
+    transform: rotate(0deg);
+}

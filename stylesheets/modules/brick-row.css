@@ -1,0 +1,11 @@
+.brick-row-odd{
+    position: relative;
+    left:-50px;
+    width: 10000vw;
+}
+
+.brick-row-even{
+    position: relative;
+    left:0px;
+    width: 10000vw;
+}

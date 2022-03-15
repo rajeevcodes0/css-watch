@@ -1,0 +1,41 @@
+#neon-guitar-two{
+    position: absolute;
+    bottom:20%;
+    right:20%;
+
+    animation-name: neon-guitar-two-animation;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-duration: 5s;
+}
+
+@keyframes neon-guitar-two-animation {
+    0%{
+        opacity: 1;
+    }
+    33%{
+        opacity: 0;
+    }
+    34%{
+        opacity: 1;
+    }
+    66%{
+        opacity: 0;
+    }
+    67%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 0;
+    }
+    81%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

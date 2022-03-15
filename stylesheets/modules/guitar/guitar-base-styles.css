@@ -1,0 +1,14 @@
+.guitar-svg-container{
+    height: 100px;
+    width: 100px;
+    transition: all 0.3s;
+}
+
+#tiny-line{
+    fill: #5ff0ce;
+}
+
+#main-body{
+    fill: #5ff0ce;
+    filter: drop-shadow(0 0 5px #5ff0ce);
+}

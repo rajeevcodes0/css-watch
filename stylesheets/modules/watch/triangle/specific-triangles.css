@@ -1,0 +1,27 @@
+.triangle-after-zero{
+    position: absolute;
+    top: 5%;
+    right: 15%;
+    transform: rotate(-90deg) scale(0.5);
+}
+
+.triangle-after-three{
+    position: absolute;
+    bottom: 5%;
+    right: 15%;
+    transform: rotate(15deg) scale(0.5);
+}
+
+.triangle-after-six{
+    position: absolute;
+    bottom: 5%;
+    left: 15%;
+    transform: rotate(85deg) scale(0.5);
+}
+
+.triangle-after-nine{
+    position: absolute;
+    top: 5%;
+    left: 15%;
+    transform: rotate(195deg) scale(0.5);
+}

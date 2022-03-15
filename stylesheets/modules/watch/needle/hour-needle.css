@@ -1,0 +1,11 @@
+.hour-needle{
+    height: 50px;
+    width: 10px;
+    background-color: #5ff0ce5b;
+    border:1px solid #5ff0ce;
+    position: absolute;
+    top:47%;
+    left:48%;
+    transform: rotate(0deg);
+    
+}

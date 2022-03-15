@@ -1,0 +1,10 @@
+.main-flex-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 9999;
+    box-shadow: inset 0 0 10vh 0px #000000;
+}

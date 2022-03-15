@@ -1,0 +1,22 @@
+.needle{
+    background-color: #5ff0ce;
+    border-radius: 10px;
+    transform-origin: 50% 10%;
+    box-shadow: 0px 0px 10px 0.1px #5ff0ce;
+    opacity: 0;
+
+    animation-name: show-needle-animation;
+    animation-delay: 3s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+@keyframes show-needle-animation {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
