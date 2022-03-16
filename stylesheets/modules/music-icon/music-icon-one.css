@@ -3,27 +3,4 @@
     top:20%;
     left:20%;
 
-    animation-name: neon-guitar-one-music-icon-animation;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-
-}
-
-@keyframes neon-guitar-one-music-icon-animation {
-    0%{
-        top:20%;
-        left:20%;
-    }
-    20%{
-        top:20.1%;
-        left:20.1%;
-    }
-    60%{
-        top:19.9%;
-        left:19.9%;
-    }
-    100%{
-        top:20%;
-        left:20%;
-    }
 }
