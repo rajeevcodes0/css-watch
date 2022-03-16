@@ -1,4 +1,6 @@
-@import "preset.css";
+@import "./preset.css";
+
+@import "./overlay.css";
 
 @import "./modules/neon-heading.css";
 

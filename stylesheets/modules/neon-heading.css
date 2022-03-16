@@ -2,9 +2,10 @@
     font-family: 'Neonderthaw', cursive;
 
     position: absolute;
-    top:0;
+    top:3%;
     font-size: 3rem;
     text-shadow: 0 0 15px #5ff0ce, 0 0 15px #66d4bb;
+    text-shadow: 0 0 15px var(--theme-color), 0 0 15px var(--theme-color-darker);
     transition: top 2s;
 
     animation-name: neon-heading-animation;

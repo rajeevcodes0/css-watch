@@ -6,9 +6,13 @@
 
 #tiny-line{
     fill: #5ff0ce;
+    fill: var(--theme-color);
 }
 
 #main-body{
     fill: #5ff0ce;
+    fill: var(--theme-color);
+
     filter: drop-shadow(0 0 5px #5ff0ce);
+    filter: drop-shadow(0 0 5px var(--theme-color));
 }

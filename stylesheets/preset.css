@@ -5,8 +5,18 @@
     
 }
 
+:root{
+    --theme-color: #f05f72;
+    --theme-color-transparent: #f05f725b;
+    --theme-color-darker: #d45465;
+}
+
 body{
     
     font-family: 'League Gothic', sans-serif;
+    /* fall back in the browsers that don't support css variables */
     color:#5ff0ce;
+    
+    color: var(--theme-color);
 }
+

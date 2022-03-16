@@ -2,7 +2,11 @@
     height: 70px;
     width: 5px;
     background-color: #5ff0ce5b;
+    background-color: var(--theme-color-transparent);
+
     border:1px solid #5ff0ce;
+    border:1px solid var(--theme-color);
+
     position: absolute;
     top:46%;
     left:49%;

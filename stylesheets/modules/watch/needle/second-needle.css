@@ -1,7 +1,11 @@
 .second-needle{
     height: 90px;
     width: 1px;
+
     background-color: #5ff0ce;
+    /* fallback */
+    background-color: var(--theme-color);
+
     position: absolute;
     top:45%;
     left:50%;
