@@ -3,9 +3,15 @@ import insertBricks from "./insertBricks.js";
 //function to add event listeners to guitars to play audio
 import addListenersToGuitars from "./guitarListers.js";
 
+import {showOverlay,hideOverlay,addListenerToOverlay} from "./overlayHandler.js";
+
+import {addListenersToDrawer} from "./themeDrawer.js";
+
 function init() {
   insertBricks();
   addListenersToGuitars();
+  addListenersToDrawer();
+  addListenerToOverlay();
   //grab the needles
   let secondNeedle = document.querySelector(".second-needle");
   let minuteNeedle = document.querySelector(".minute-needle");

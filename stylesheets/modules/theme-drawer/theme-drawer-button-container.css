@@ -1,0 +1,17 @@
+.theme-drawer-button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+
+    position: absolute;
+    bottom:0;
+    left:50%;
+    transform: translate(-50%,20px);
+}
+
+.arrow-svg-path{
+    fill:#f05f72;
+    fill:var(--theme-color);
+}

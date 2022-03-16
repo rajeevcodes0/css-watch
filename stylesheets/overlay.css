@@ -4,7 +4,9 @@
     bottom:0;
     left:0;
     right:0;
-    background-color: red;
+    background-color:rgba(37, 37, 37, 0.849);
     z-index: 99999;
     display: none;
+    filter: blur(100px);
+    opacity: 1;
 }

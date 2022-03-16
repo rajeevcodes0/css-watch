@@ -26,4 +26,5 @@
 
 #music-icon-path{
     fill:#5ff0ce;
+    fill: var(--theme-color);
 }

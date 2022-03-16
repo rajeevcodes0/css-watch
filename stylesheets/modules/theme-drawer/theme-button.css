@@ -1,0 +1,48 @@
+.theme-button{
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    margin:10px;
+
+    animation-name: theme-button-animation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+@keyframes theme-button-animation {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.8);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.theme-button:nth-child(1){
+    --show-theme-color:rgb(91, 91, 235);
+    
+    border: 5px solid var(--show-theme-color);
+    box-shadow: 0px 0px 10px 1px var(--show-theme-color),inset 0px 0px 10px 5px var(--show-theme-color);
+}
+.theme-button:nth-child(2){
+    --show-theme-color:rgb(227, 230, 78);
+    
+    border: 5px solid var(--show-theme-color);
+    box-shadow: 0px 0px 10px 1px var(--show-theme-color),inset 0px 0px 10px 5px var(--show-theme-color);
+}
+.theme-button:nth-child(3){
+    --show-theme-color:rgb(91, 235, 151);
+    
+    border: 5px solid var(--show-theme-color);
+    box-shadow: 0px 0px 10px 1px var(--show-theme-color),inset 0px 0px 10px 5px var(--show-theme-color);
+}
+.theme-button:nth-child(4){
+    --show-theme-color:rgb(235, 91, 91);
+    
+    border: 5px solid var(--show-theme-color);
+    box-shadow: 0px 0px 10px 1px var(--show-theme-color),inset 0px 0px 10px 5px var(--show-theme-color);
+}
